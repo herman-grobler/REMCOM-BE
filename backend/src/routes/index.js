@@ -1,12 +1,12 @@
 import { Router } from 'express';
 import authRouter from './auth.js';
+// import { authenticateToken, requireRole } from '../auth.js';
 
 const router = Router();
 
 router.use(authRouter);
 
-// Example protected route scaffold
-// import { authenticateToken, requireRole } from '../auth.js';
+// Example protected route scaffold:
 // router.get('/admin', authenticateToken, requireRole('admin'), (req, res) => {
 //   res.json({ message: 'Welcome admin!' });
 // });
